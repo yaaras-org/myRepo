@@ -1,0 +1,37 @@
+# -*- mode: yaml -*-
+
+manifest:
+  version: 1.0
+
+automations:
+  docs:
+    if:
+      - {{ files | allDocs }}
+    run: 
+      - action: add-label@v1
+        args:
+          label: 'docs'
+      - action: approve@v1
+  tests:
+    if:
+      - {{ files | allTests }}
+    run: 
+      - action: add-label@v1
+        args:
+          label: 'tests'
+      - action: approve@v1
+  complex_pr:
+    if:
+      - {{ (files | length >= 10) or (branch | estimatedReviewTime >= 20) }}
+    run:
+      - action: add-label@v1
+        args:
+          label: 'long-review'
+  junior:
+    if:
+      - {{ repo.author_age < 21 and repo.age >= 21 }}
+    run:
+      - action: add-label@v1
+        args:
+          label: noob
+          color: '#ff0000'
