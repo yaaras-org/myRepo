@@ -1,0 +1,13 @@
+# -*- mode: yaml -*-
+
+manifest:
+  version: 1.0
+
+code_additions_sum: {{ branch.diff.files_metadata | filter(attr='new_file', regex=r/\.js$|\.ts$/) | map(attr='additions') | sum }}
+
+automations:
+  issuer_is_shaked_and_code_addition_small:
+    if:
+      - {{ (branch.author | includes(term='shaked')) and (code_additions_sum <= 12) and (files | length <= 2) }}
+    run:
+      - action: approve@v1
