@@ -48,7 +48,7 @@ automations:
       # such PRs to save reviewers time for such changes.
       # - action: approve@v1
 
-  the_right_reviewer:
+  suggest_the_right_reviewer:
     if: 
       - true
     run:
