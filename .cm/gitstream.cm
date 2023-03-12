@@ -49,7 +49,7 @@ automations:
       # - action: approve@v1
 
   suggest_the_right_reviewer:
-    if: 
+ if: 
       - true
     run:
       - action: add-comment@v1
