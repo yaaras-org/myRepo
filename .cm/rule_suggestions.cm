@@ -7,7 +7,7 @@ code_additions_sum: {{ branch.diff.files_metadata | filter(attr='new_file', rege
 
 automations:
   issuer_is_shaked_and_code_addition_small:
-    if:
+if:
       - {{ (branch.author | includes(term='shaked')) and (code_additions_sum <= 12) and (files | length <= 2) }}
     run:
       - action: approve@v1
