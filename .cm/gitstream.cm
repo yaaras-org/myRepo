@@ -69,7 +69,7 @@ automations:
             {{ repo | explainCodeExperts(gt=10) }}
   run_e2e_tests:
     if:
-      - {{ pr.status == APPROVED }}
+      - {{ pr.status | lower | match(term='approved') | every }}
     run:
       - action: add-comment@v1
         args:
