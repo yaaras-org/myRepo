@@ -7,3 +7,4 @@ hello
 kjl
 test engine on prod
 test engine on prod
+test local amplitude event
