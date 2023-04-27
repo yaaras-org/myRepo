@@ -10,5 +10,3 @@ console.log('test amplitude event updateAutomationRunSuccessCommonProvider');
 console.log('test amplitude event updateAutomationRunSuccessCommonProvider');
 console.log('test amplitude event updateAutomationRunSuccessCommonProvider');
 
-console.log('test amplitude event updateAutomationRunSuccessCommonProvider');
-console.log('test amplitude event updateAutomationRunSuccessCommonProvider');
