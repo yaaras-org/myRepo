@@ -11,5 +11,6 @@ automations:
         - action: add-reviewers@v1
           args:
             reviewers: {{ calc.owners }}
+            fail_on_error: false 
 calc:
   owners: {{ repo | rankByGitBlame(gt=25) }}
