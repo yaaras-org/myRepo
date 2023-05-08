@@ -73,7 +73,8 @@ automations:
     run:
       - action: add-comment@v1
         args:
-          comment: '66ygyh
+          comment: |
+          'lolo'
     
 calc:
   etr: {{ branch | estimatedReviewTime }}
