@@ -10,6 +10,7 @@ automations:
       run:
         - action: add-reviewers@v1
           args:
-            reviewers: {{ calc.owners }}
-calc:
-  owners: {{ repo | rankByGitBlame(gt=25) }}
+            reviewers: [linear-b/deploys-approval]
+            fail_on_error: false
+# calc:
+#   owners: {{ repo | rankByGitBlame(gt=25) }}
