@@ -7,3 +7,4 @@ hello
 kjl
 test engine on prod
 test local app run
+test local app run fail on error = false
