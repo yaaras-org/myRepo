@@ -14,3 +14,5 @@ test local app run fail on error = false
 test local app run fail on error = true
 
 test local app run fail on error = false
+
+test local app run fail on error = false
