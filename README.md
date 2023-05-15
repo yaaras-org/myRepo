@@ -10,3 +10,5 @@ new line
 new line
 new line
 new line
+
+test add reviewer fail on error = true with ilegal team
