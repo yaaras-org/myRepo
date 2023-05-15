@@ -56,9 +56,9 @@ automations:
         args:
           comment: |
             {{ repo | explainRankByGitBlame(gt=10) }}
-      - action: add-reviewers@v1
-        args:
-          reviewers: {{ repo | rankByGitBlame(gt=25) | random }}
+#      - action: add-reviewers@v1
+#        args:
+#          reviewers: {{ repo | rankByGitBlame(gt=25) | random }}
   code_experts:
     if: 
       - true
