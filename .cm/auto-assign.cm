@@ -11,8 +11,8 @@ automations:
         - action: add-reviewers@v1
           args:
             # reviewers: [yaaras-org/pasha-team]
-            # reviewers: [yaaras-org/pasha-team, yaaras-org/pacho-team]
-            reviewers: [yaaras-org/pacho-team]
+            reviewers: [yaaras-org/pasha-team, yaaras-org/pacho-team]
+            # reviewers: [yaaras-org/pacho-team]
             fail_on_error: false
 # calc:
 #   owners: {{ repo | rankByGitBlame(gt=25) }}
