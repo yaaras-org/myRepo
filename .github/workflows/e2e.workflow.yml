@@ -69,6 +69,8 @@ jobs:
           
       - name: Create Check Run
         uses: actions/github-script@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           script: |
             const createCheckRunResponse = await github.checks.create({
@@ -81,8 +83,6 @@ jobs:
             });
 
             core.setOutput('check-run-id', createCheckRunResponse.data.id);
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             
       - name: Run e2e
         if: steps.set-environment-variables.outputs.rune2e
