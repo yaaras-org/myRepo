@@ -14,5 +14,5 @@ automations:
              # reviewers: [yaaras-org/pasha-team, yaaras-org/pacho-team]
              # reviewers: [yaaras-org/pacho-team]
              fail_on_error: false
- calc:
+calc:
    owners: {{ repo | rankByGitBlame(gt=25) }}
