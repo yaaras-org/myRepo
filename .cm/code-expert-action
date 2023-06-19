@@ -10,4 +10,3 @@ automations:
     run:
       - action: add-code-experts@v1 
         args:
-          gt: 10
