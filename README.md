@@ -15,3 +15,5 @@ prod test local app run fail on error = true + one of the assigned teams is ille
 Sanity
 
 sanity local new action
+sanity local new action
+
