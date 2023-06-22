@@ -89,3 +89,5 @@ Wildest dreams, ah, ha
 Wildest dreams, ah, ha
 
 nice nice
+Wildest dreams, ah, ha
+Wildest dreams, ah, ha
