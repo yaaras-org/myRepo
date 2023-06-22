@@ -84,7 +84,6 @@ Standin' in a nice dress
 Starin' at the sunset, babe
 Red lips and rosy cheeks
 Say you'll see me again
-Even if it's just in your
-Wildest dreams, ah, ha
+
 
 
