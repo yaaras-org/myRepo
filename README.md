@@ -81,5 +81,5 @@ Baby, kiss it better, I
 
 Say you'll remember me
 Standin' in a nice dress
-Starin' at the sunset, babe
+
 
