@@ -93,3 +93,5 @@ Wildest dreams, ah, ha
 Wildest dreams, ah, ha
 Say you'll remember me
 Standin' in a nice dress
+
+Vintage tee, brand new phone
