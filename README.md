@@ -78,3 +78,12 @@ Drunk under a streetlight, I
 I knew you
 Hand under my sweatshirt
 Baby, kiss it better, I
+
+Say you'll remember me
+Standin' in a nice dress
+Starin' at the sunset, babe
+Red lips and rosy cheeks
+Say you'll see me again
+Even if it's just in your
+Wildest dreams, ah, ha
+Wildest dreams, ah, ha
