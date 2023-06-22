@@ -71,3 +71,10 @@ When you are young, they assume you know nothing
 Sequin smile, black lipstick
 Sensual politics
 When you are young, they assume you know nothing
+
+But I knew you
+Dancin' in your Levi's
+Drunk under a streetlight, I
+I knew you
+Hand under my sweatshirt
+Baby, kiss it better, I
