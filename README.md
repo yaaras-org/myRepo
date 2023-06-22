@@ -63,3 +63,11 @@ I'm always running out of time
 (She's always running out of time)
 Out of time
 Always running out of time
+
+
+Vintage tee, brand new phone
+High heels on cobblestones
+When you are young, they assume you know nothing
+Sequin smile, black lipstick
+Sensual politics
+When you are young, they assume you know nothing
