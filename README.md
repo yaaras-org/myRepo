@@ -2,9 +2,6 @@
 my local test repo for LinearB
 
 Hello!
-Hello!
-Hello!
-Hello!
 
 hello
 
