@@ -93,3 +93,6 @@ Wildest dreams, ah, ha
 Even if it's just in your
 Wildest dreams, ah, ha
 Wildest dreams, ah, ha
+
+Say you'll remember me
+Standin' in a nice dress
