@@ -4,8 +4,8 @@ my local test repo for LinearB
 Hello!
 Hello!
 
-hhelloello
-hhelloello
+hello
+
 test engine on prod
 test local app run
 test local app run
