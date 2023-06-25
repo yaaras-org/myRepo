@@ -1,7 +1,6 @@
 # myRepo
 my local test repo for LinearB
-my local test repo for LinearBֿ :) :) :) :) :) :) :)
-
+my local test repo for LinearBֿ :) :) :) :) :) :)
 Hello!!!
 
 hello
