@@ -7,10 +7,11 @@ console.log("Hi!");
 
 console.log("Hi!");
 
-We're always running out of time
-(She's always running out of time)
-I'm always running out of time
-I'm always running out of time
-(She's always running out of time)
-Out of time
-Always running out of time
+console.log("We're always running out of time");
+console.log("(She's always running out of time");
+console.log("I'm always running out of time");
+console.log("I'm always running out of time");
+console.log("(She's always running out of time)");
+console.log("Out of time");
+console.log("Always running out of time");
+console.log("It's me! Hi! I'm the problem it's me");
