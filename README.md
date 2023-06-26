@@ -96,3 +96,6 @@ Wildest dreams, ah, ha
 
 Say you'll remember me
 Standin' in a nice dress
+
+But I knew you
+Dancin' in your Levi's
