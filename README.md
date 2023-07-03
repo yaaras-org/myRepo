@@ -3,7 +3,7 @@ my local test repo for LinearB
 
 Hello!!!
 
-hello
+hello :)
 
 test engine on prod
 test local app run
