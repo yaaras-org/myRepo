@@ -1,4 +1,4 @@
-name: Deploy to dev Workflow
+name: Run e2e tests
 
 on:
   issue_comment:
