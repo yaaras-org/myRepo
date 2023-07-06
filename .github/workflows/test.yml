@@ -1,0 +1,55 @@
+name: Status Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      status:
+        description: 'Status of the workflow (success/failed)'
+        required: true
+        default: 'success'
+      token:
+        description: 'Token to run the workflow'
+        required: true
+      head_sha:
+        description: 'SHA of the commit or pull request head'
+        required: false
+
+jobs:
+  process_status:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display Status
+        run: |
+          if [ "${{ github.event.inputs.status }}" == "success" ]; then
+            echo "Workflow status: Success"
+          else
+            echo "Workflow status: Failed"
+          fi
+
+      - name: Create PR Check
+        uses: actions/github-script@v5
+        with:
+          #github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ github.event.inputs.token }}
+          script: |
+            const { context, github } = require('@actions/github');
+
+            const prNumber = context.payload.issue.number;
+            const repo = context.repo;
+            const status = "${{ github.event.inputs.status }}";
+            const headSha = "${{ github.event.inputs.head_sha || context.sha }}";
+
+            const createCheckRequest = {
+              ...repo,
+              name: 'Status Check',
+              head_sha: headSha,
+              status: status === 'success' ? 'completed' : 'completed',
+              conclusion: status === 'success' ? 'success' : 'failure',
+              output: {
+                title: 'Workflow Status',
+                summary: `The workflow status is: ${status}`,
+              },
+            };
+
+            github.checks.create(createCheckRequest);
