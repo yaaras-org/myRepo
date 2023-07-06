@@ -1,11 +1,11 @@
-name: Run e2e Workflow
+name: Deploy to dev Workflow
 
 on:
   issue_comment:
     types: [created]
 
 jobs:
-  run-e2e:
+  deploy-to-dev:
     runs-on: ubuntu-latest
     if: github.event.issue.pull_request && startsWith(github.event.comment.body, '/dev')
     strategy:
@@ -32,6 +32,7 @@ jobs:
             } catch (err) {
               core.setFailed(`Request failed with error ${err}`)
             }
+
 
       - name: Set Environment Variables
         env:
@@ -64,8 +65,6 @@ jobs:
           echo "::set-output name=repoOwner::${{ github.repository_owner }}"
           echo "prNumber: ${{ github.event.pull_request.number }}"
           echo "::set-output name=prNumber::${{ github.event.pull_request.number }}"
-          echo "checkRunId: ${{ github.run_id }}"
-          echo "::set-output name=checkRunId::${{ github.run_id }}"
           
       - name: Create Check Run
         uses: actions/github-script@v3
@@ -91,7 +90,7 @@ jobs:
           repoName: ${{steps.set-environment-variables.outputs.repoName}}
           repoOwner: ${{steps.set-environment-variables.outputs.repoOwner}}
           prNumber: ${{steps.set-environment-variables.outputs.prNumber}}
-          checkRunId: ${{steps.create-check-run.outputs.check-run-id}}
+          checkRunId: ${{steps.set-environment-variables.outputs.checkRunId}}
         run: |
               curl --location 'https://r0r15y31o5.execute-api.us-west-1.amazonaws.com/dev-01/e2e/gitstream_scenario' \
               --header 'Content-Type: application/json' \
@@ -103,7 +102,7 @@ jobs:
                       "org": "'"${repoOwner}"'",
                       "repo": "'"${repoName}"'",
                       "pr": "'"${prNumber}"'",
-                      "id": "'"${checkRunId}"'"
+                      "checkName": "Run e2e"
                     },
                     "slack": {
                       "channel": ""
