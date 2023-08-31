@@ -14,5 +14,22 @@ automations:
              # reviewers: [yaaras-org/pasha-team, yaaras-org/pacho-team]
              # reviewers: [yaaras-org/pacho-team]
              fail_on_error: false
+  first_commit:
+      if: 
+      - true
+      run: 
+        - action: add-comment@v1
+          args:
+            comment: {{ repo.contributors | isFirstCommit(branch.author) }}
+
+  code_experts:
+      if:
+        - true
+      run:
+        - action: explain-code-experts@v1 
+          args:
+            gt: 10
+
+
 calc:
    owners: {{ repo | rankByGitBlame(gt=25) }}
