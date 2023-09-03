@@ -14,13 +14,13 @@ automations:
           # reviewers: [yaaras-org/pasha-team, yaaras-org/pacho-team]
           # reviewers: [yaaras-org/pacho-team]
           fail_on_error: false
-  first_commit:
-    if: 
-      - true
-    run: 
-      - action: add-comment@v1
-        args:
-          comment: {{ repo.contributors | isFirstCommit(branch.author) }}
+#  first_commit:
+#    if: 
+#      - true
+#    run: 
+#      - action: add-comment@v1
+#        args:
+#          comment: {{ repo.contributors | isFirstCommit(branch.author) }}
   code_experts:
     if:
       - true
